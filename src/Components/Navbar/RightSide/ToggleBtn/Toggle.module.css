@@ -1,0 +1,7 @@
+.btnShadow {
+    box-shadow: none !important;
+}
+
+.btnShadow:focus {
+    box-shadow: none !important;
+}
