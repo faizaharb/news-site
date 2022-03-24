@@ -2,7 +2,7 @@ import React from 'react';
 import LeftSide from '../LiftSide/LeftSide';
 import Links from '../RightSide/Links/Links';
 import Toggle from '../RightSide/ToggleBtn/Toggle';
-import style from './Nav.module.css'
+import style from './Nav.module.css';
 
 export default function Nav() {
     return (

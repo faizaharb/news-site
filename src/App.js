@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Business from "./Components/Business/Business";
 import Entertainment from "./Components/Entertainment/Entertainment";
-import General from "./Components/General/General";
 import Health from "./Components/Health/Health";
 import Home from "./Components/Home/Home";
 import Nav from "./Components/Navbar/Nav/Nav";
@@ -25,7 +24,6 @@ export default function App() {
           <Route path="science" element={<Science />}></Route>
           <Route path="sports" element={<Sports />}></Route>
           <Route path="technology" element={<Technology />}></Route>
-          <Route path="general" element={<General />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </div>

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import FooterSec from '../Footer/FooterSec/FooterSec';
 import style from './Entertainment.module.css'
 
 
@@ -18,22 +19,30 @@ export default function Entertainment() {
     }, [] );
     return (
         <>
-            <section id='business' className='my-5 py-5'>
+            <section id='entertainment' className='my-5'>
                 <div className="container">
-                    <div className={ `secTitle d-flex justify-content-between align-items-center ${ style.borderColor } rounded-2 bg-light py-3` }>
-                        <h2 className='text-capitalize ps-4 fs-2 fw-bolder text-danger'>entertainment news</h2>
-                        <button className='btn shadow-none text-capitalize text-secondary me-4 pe-4'>view all</button>
-                    </div>
-                </div>
-                <div className="container my-5">
                     <div className="row">
-                        { entertainment.map( ( entertainmentNew, index ) => <div className='col-md-4' key={ index }>
-                            <p>{ entertainmentNew.title }</p>
+                        <div className="col-md-9">
+                            <div className={ `${ style.secTitle }` }>
+                                <h2 className='text-capitalize fs-2 fw-bolder text-danger'>entertainment news</h2>
+                                <p className='pb-1 text-primary'>Don't miss and stay up-to-date</p>
+                            </div>
+                            <div className="row my-4 pb-5">
+
+                                { entertainment.map( ( entertainmentNew, index ) => <div className='col-md-4' key={ index }>
+                                    <img src={ entertainmentNew.urlToImage } className="w-100" alt={ 'altimage' } />
+                                    <p className='my-3'>{ entertainmentNew.title }</p>
+                                </div>
+                                ) }
+                            </div>
                         </div>
-                        ) }
+                        <div className="col-md-3">
+
+                        </div>
                     </div>
                 </div>
             </section>
+            <FooterSec />
         </>
     )
 }

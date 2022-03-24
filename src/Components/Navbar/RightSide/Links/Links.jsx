@@ -27,9 +27,6 @@ export default function Links() {
                     <li className="nav-item">
                         <Link className="nav-link text-white text-capitalize fw-bolder" to="technology">technology</Link>
                     </li>
-                    <li className="nav-item">
-                        <Link className="nav-link text-white text-capitalize fw-bolder" to="general">general</Link>
-                    </li>
                 </ul>
             </div>
         </>

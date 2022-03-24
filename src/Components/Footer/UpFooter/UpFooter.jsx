@@ -1,6 +1,8 @@
 import React from 'react';
 import LeftSide from '../../Navbar/LiftSide/LeftSide';
 import style from './UpFooter.module.css';
+import Categories from '../../Category/Categories';
+import Contact from '../../Contact/Contact';
 
 export default function UpFooter() {
     return (
@@ -15,16 +17,10 @@ export default function UpFooter() {
                             </div>
                         </div>
                         <div className="col-md-4">
-                            <div className="categorey">
-                                <h4 className='text-capitalize'>categories</h4>
-                                <hr className='my-3' />
-                            </div>
+                            <Categories />
                         </div>
                         <div className="col-md-4">
-                            <div className="contact">
-                                <h4 className='text-capitalize'>contact us</h4>
-                                <hr className='my-3' />
-                            </div>
+                            <Contact />
                         </div>
                     </div>
                 </div>

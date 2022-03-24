@@ -1,0 +1,13 @@
+.secTitle {
+  position: relative;
+}
+
+.secTitle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 1%;
+  background: linear-gradient(to right, #d32f2f 13%, #ccc 13%, #ccc 100%);
+}
